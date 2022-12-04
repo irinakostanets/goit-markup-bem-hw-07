@@ -45,23 +45,19 @@
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(100%);
+    .project-image:hover &,
+    .project-image:focus & {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-
-.project-image:hover .project-text,
-.project-image:focus .project-text {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 .project-image {
     display: block;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
-
-.project-image:hover,
-.project-image:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .project-type {
     font-size: 16px;
     line-height: 1.88;
