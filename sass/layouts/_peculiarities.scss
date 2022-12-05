@@ -16,14 +16,14 @@
 }
 
 .feature-item-link {
-    display: flex;
+    @extend %link;
     content: "";
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
     background-size: contain;
     background: #F5F4FA;
-    align-items: center;
+    
     justify-content: center;
 }
 

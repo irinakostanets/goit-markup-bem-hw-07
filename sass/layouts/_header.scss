@@ -4,10 +4,9 @@
 
 /* Logo */
 
-.logo {
+.header__logo {
     margin-right: 93px;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font (null, 26px, 1.19, null);
     color: var(--accent-color);
     text-decoration: none;
 }
@@ -17,20 +16,19 @@
 }
 
 /* Site-nav */
-.main-nav {
-    display: flex;
-    align-items: center;
+.header__container {
+    @extend %link;
 }
 
-.site-nav-list {
+.page {
     display: flex;
 }
 
-.site-nav-list .item:not(:last-child) {
+.page .page__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.site-page {
+.page__link {
     position: relative;
     display: block;
     padding-top: 32px;
@@ -38,10 +36,7 @@
 
     color: var(--primary-text-color);
     font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font (500, 14px, 1.14, 0.02);
     text-decoration: none;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -51,7 +46,7 @@
     }
 }
 
-.site-page.current {
+.page__link.current {
     color: var(--accent-color);
     padding: 32px 0px;
     &::after {
@@ -67,49 +62,45 @@
     }
 }
 
-.contact {
+.header__contact {
     display: flex;
     margin-left: auto;
 }
 
-.contact .item+.item {
+.header__contact .header__item+.header__item {
     margin-left: 50px;
 }
 
-.contact-item {
-    display: flex;
-    align-items: center;
+.header__item {
+    @extend %link;
     padding-top: 32px;
     padding-bottom: 32px;
 
     color: var(--p-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font (500, 14px, 1.14, 0.02);
     text-decoration: none;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .item:hover &,
-    .contact-item:focus & {
+    .contact__item:hover &,
+    .header__item:focus & {
         color: var(--accent-color);
         fill: var(--accent-color);
     }
 }
 
-.button-icon {
+.header__icon {
     margin-right: 10px;
     fill: var(--p-text-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .item:hover &,
-    .contact-item:focus & {
+    .contact__item:hover &,
+    .header__item:focus & {
         color: var(--accent-color);
         fill: var(--accent-color);
     }
 }
 
-.button-item {
+.contact__item {
     padding-top: 32px;
     padding-bottom: 32px;
     fill: var(--p-text-color);

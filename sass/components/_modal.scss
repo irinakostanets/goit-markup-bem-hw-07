@@ -63,21 +63,15 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    & ::placeholder {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.01em;
+    &::placeholder {
+        @include font (400, 12px, 1.17, 0.01);
         color: rgba(117, 117, 117, 0.5);
     }
 }
 .modal-title {
     margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font (700, 20px,1.15, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 .input-wrapper {
     position: relative;
@@ -133,10 +127,7 @@
     margin-left: 0;
     text-align: start;
     color: var(--p-text-color);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.67;
-    letter-spacing: 0.01em;
+    @include font (400, 12px, 1.67, 0.01);
     text-transform: none;
 }
 
@@ -151,21 +142,15 @@
 }
 .form-checkbox label {
     display: flex;
-
     width: 100%;
     margin-left: 0;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font (400, 14px, 1.71, 0.03);
     color: var(--p-text-color);
     text-transform: none;
 }
 
 .check-text {
-    display: flex;
-    align-items: center;
+    @extend %list;
     justify-content: center;
     flex-direction: row;
     width: 405px;
@@ -211,15 +196,12 @@
 
 }
 .modal-button-sub {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font (700, 16px, 1.88, 0.06);
     display: block;
     margin: 0 auto;
     padding: 10px 52px;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
 
     color: var(--white-color);
     background: var(--accent-color);
