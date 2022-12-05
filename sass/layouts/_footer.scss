@@ -15,16 +15,7 @@
     margin-right: 70px;
 }
 
-.logo-footer {
-    @include font (null, 26px, 1.19, null);
-   
-    color: var(--accent-color);
-    text-decoration: none;
-}
-
-.logo-footer-secondary {
-    color: var(--white-color);
-}
+/*footer-logo*/
 
 address {
     margin-top: 20px;

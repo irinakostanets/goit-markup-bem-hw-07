@@ -4,31 +4,23 @@
 
 /* Logo */
 
-.header__logo {
-    margin-right: 93px;
-    @include font (null, 26px, 1.19, null);
-    color: var(--accent-color);
-    text-decoration: none;
-}
 
-.logo-header {
-    color: black;
-}
 
 /* Site-nav */
-.header__container {
-    @extend %link;
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 
-.page {
+.site-nav-list {
     display: flex;
 }
 
-.page .page__item:not(:last-child) {
+.site-nav-list .item:not(:last-child) {
     margin-right: 50px;
 }
 
-.page__link {
+.site-page {
     position: relative;
     display: block;
     padding-top: 32px;
@@ -36,19 +28,24 @@
 
     color: var(--primary-text-color);
     font-family: 'Roboto';
-    @include font (500, 14px, 1.14, 0.02);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
         color: var(--accent-color);
     }
 }
 
-.page__link.current {
+.site-page.current {
     color: var(--accent-color);
     padding: 32px 0px;
+
     &::after {
         position: absolute;
         left: 0;
@@ -62,45 +59,51 @@
     }
 }
 
-.header__contact {
+.contact {
     display: flex;
     margin-left: auto;
 }
 
-.header__contact .header__item+.header__item {
+.contact .item+.item {
     margin-left: 50px;
 }
 
-.header__item {
-    @extend %link;
+.contact-item {
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
     color: var(--p-text-color);
-    @include font (500, 14px, 1.14, 0.02);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .contact__item:hover &,
-    .header__item:focus & {
+
+    .item:hover &,
+    .contact-item:focus & {
         color: var(--accent-color);
         fill: var(--accent-color);
     }
 }
 
-.header__icon {
+.button-icon {
     margin-right: 10px;
     fill: var(--p-text-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .contact__item:hover &,
-    .header__item:focus & {
+
+    .item:hover &,
+    .contact-item:focus & {
         color: var(--accent-color);
         fill: var(--accent-color);
     }
 }
 
-.contact__item {
+.button-item {
     padding-top: 32px;
     padding-bottom: 32px;
     fill: var(--p-text-color);
