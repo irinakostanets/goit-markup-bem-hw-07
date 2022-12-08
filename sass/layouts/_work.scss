@@ -1,22 +1,22 @@
-.section.work {
+.work {
     display: block;
     padding-top: 0;
 
 }
-.section-list {
+.work__list {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-.thumb {
+.work__thumb {
     position: relative;
-    >.label {
+    >.work__label {
         position: absolute;
         bottom: 0;
         left: 0;
     }
 }
-.label {
+.work__label {
     padding-top: 27px;
     padding-bottom: 27px;
     width: 100%;

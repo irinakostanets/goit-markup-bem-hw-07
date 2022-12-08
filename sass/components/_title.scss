@@ -5,7 +5,8 @@
     color: var(--white-color);
 }
 .section-title,
-.section2-title {
+.section2-title,
+.clients__title {
     @include font (null,36px, 1.17, null);
     text-align: center;
 }
@@ -20,7 +21,8 @@
 .section2-title {
     margin-bottom: 50px;
 }
-.section-title {
+.section-title,
+.clients__title {
     margin-bottom: 50px;
     padding-top: 94px;
 }
