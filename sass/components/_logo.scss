@@ -2,7 +2,7 @@
     margin-right: 93px;
     @include font (null, 26px, 1.19, null);
     
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: none;
 }
 
@@ -12,10 +12,10 @@
 .logo-footer {
     @include font (null, 26px, 1.19, null);
 
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: none;
 }
 
 .logo-footer-secondary {
-    color: var(--white-color);
+    color: $white-color;
 }

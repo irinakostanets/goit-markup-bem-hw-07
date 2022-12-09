@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     align-items: baseline;
-    background-color: var(--dark-backgroud-color);
+    background-color: $dark-backgroud-color;
 }
 
 .footer-container {
@@ -27,7 +27,7 @@ address {
 }
 
 .footer-adress {
-    color: var(--white-color);
+    color: $white-color;
     font-family: 'Roboto';
     font-style: normal;
     @include font (400, 14px, 1.71, null);
@@ -40,11 +40,11 @@ address {
     @include font (400, 14px, 1.71, 0.03);
 
     text-decoration: none;
-    color: var(--contacts-footer-color);
+    color: $contacts-footer-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        color: var(--accent-color);
+        color: $accent-color;
     }
 }
 .soc-list {
@@ -65,12 +65,12 @@ address {
     @extend %list;
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);
-    fill: var(--white-color);
+    fill: $white-color;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        background-color: var(--accent-color);
+        background-color: $accent-color;
     }
 }
 
@@ -90,15 +90,15 @@ address {
     font-family: 'Roboto';
     @include font (400, 16px, 1.25, 0.03);
     @extend %list;
-    color: var(--contacts-footer-color);
+    color: $contacts-footer-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background-color: var(--dark-backgroud-color);
+    background-color: $dark-backgroud-color;
     &::placeholder {
         @include font (null, 16px, 1.25, 0.03);
         @extend %list;
-        color: var(--contacts-footer-color);
+        color: $contacts-footer-color;
     }
 }
 label {
@@ -106,7 +106,7 @@ label {
     flex-direction: column;
     @include font (700, 14px, 1.14, 0.03);
     text-transform: uppercase;
-    color: var(--white-color);
+    color: $white-color;
 }
 .footer-button {
     margin-left: 12px;
@@ -117,11 +117,11 @@ label {
     text-align: center;
     align-self: flex-end;
 
-    color: var(--white-color);
-    fill: var(--white-color);
-    background: var(--accent-color);
+    color: $white-color;
+    fill: $white-color;
+    background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-color: var(--accent-color);
+    border-color: $accent-color;
     border-radius: 4px;
     border: none;
     cursor: pointer;
