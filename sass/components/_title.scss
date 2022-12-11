@@ -1,14 +1,8 @@
-.hero-title {
-    margin-bottom: 30px;
-    @include font (900, 44px, 1.36, 0.06);
-    text-transform: uppercase;
-    color: $white-color;
-}
-.section-title,
-.section2-title,
-.clients__title {
+.section-title {
     @include font (null,36px, 1.17, null);
     text-align: center;
+    padding-top: 94px;
+    margin-bottom: 50px;
 }
 
 .feature-title {
@@ -17,14 +11,6 @@
     @include font (null, 14px, 1.14, null);
     
     text-transform: uppercase;
-}
-.section2-title {
-    margin-bottom: 50px;
-}
-.section-title,
-.clients__title {
-    margin-bottom: 50px;
-    padding-top: 94px;
 }
 .project-title {
     margin-bottom: 4px;

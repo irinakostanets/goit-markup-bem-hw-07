@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-01</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>goit-markup-hw-07</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
@@ -18,8 +16,8 @@
             <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
             <nav class="site-nav">
                 <ul class="site-nav-list">
-                    <li class="item"><a href="./index.html" class="site-page">Студія</a></li>
-                    <li class="item"><a href="./portfolio.html" class="site-page current">Портфоліо</a></li>
+                    <li class="item"><a href="./index.html" class="site-page current">Студія</a></li>
+                    <li class="item"><a href="./portfolio.html" class="site-page">Портфоліо</a></li>
                     <li class="item"><a href="#" class="site-page">Контакти</a></li>
                 </ul>
             </nav>
@@ -41,8 +39,8 @@
     <main>
         <section class="section hero">
             <div class="container">
-                <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
-                <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+                <h1 class="hero__title">Ефективні рішення для <br> вашого бізнесу</h1>
+                <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                     <button class="modal-button" data-modal-close><svg class="modal-button-icon" width="11" height="11">
@@ -144,42 +142,42 @@
             </div>
         </section>
         <section class="section work">
-            <div class="container work__container">
-                <h2 class="section-title work__title">Чим ми займаємося</h2>
-                <ul class="section-list work__list">
-                    <li class="section-item work__item">
-                        <div class="thumb work__thumb">
+            <div class="container">
+                <h2 class="section-title">Чим ми займаємося</h2>
+                <ul class="work__list">
+                    <li class="work__item">
+                        <div class="work__thumb">
                         <img src="./images/box1.jpg" alt="написання коду" width="370" height="294" style="display: block;">
-                        <h3 class="label work__label">Десктопні додатки</h3>
+                        <h3 class="work__label">Десктопні додатки</h3>
                         </div>
                     </li>
-                    <li class="section-item work__item">
-                        <div class="thumb  work__thumb">
+                    <li class="work__item">
+                        <div class="work__thumb">
                         <img src="./images/box2.jpg" alt="робота з мобільним додатком" width="370" height="294" style="display: block;">
-                        <h3 class="label work__label">Мобільні додатки</h3>
+                        <h3 class="work__label">Мобільні додатки</h3>
                         </div>
                     </li>
-                    <li class="section-item work__item">
-                        <div class="thumb  work__thumb">
+                    <li class="work__item">
+                        <div class="work__thumb">
                         <img src="./images/box3.jpg" alt="графічний дизайн" width="370" height="294" style="display: block;">
-                        <h3 class="label work__label">Дизайнерські рішення</h3>
+                        <h3 class="work__label">Дизайнерські рішення</h3>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="section our-team">
+        <section class="section team">
             <div class="container">
-                <h2 class="section2-title">Наша команда</h2>
-                <ul class="section2-list">
-                    <li class="team-member">
+                <h2 class="section-title">Наша команда</h2>
+                <ul class="team__list">
+                    <li class="team__member">
                         <img src="./images/igor.jpg" alt="Ігор посміхається" width="270" height="260" style="display: block;">
-                        <h3 class="name">Ігор Дем'яненко</h3>
-                        <p class="position">Product Designer</p>
-                        <ul class="member-soc-list">
-                            <li class="member-soc-item">
-                                <a class="member-soc-link link" href="#">
-                                    <svg class="member-soc-icon" width="20" height="20">
+                        <h3 class="team__name">Ігор Дем'яненко</h3>
+                        <p class="team__position">Product Designer</p>
+                        <ul class="team__soc-list">
+                            <li class="team__soc-item">
+                                <a class="team__soc-link link" href="#">
+                                    <svg class="team-member__soc-icon" width="20" height="20">
                                         <use href="./images/icons.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
@@ -316,47 +314,47 @@
             </div>
         </section>
         <section class="clients">
-            <div class="container clients__container">
-                <h2 class="clients__title">Постійні клієнти</h2>
-                <ul class="clients__list">
-                    <li class="clients__logo">
-                        <a class="clients__link" href="#">
-                            <svg class="clients__icon" width="106" height="60">
+            <div class="container">
+                <h2 class="section-title">Постійні клієнти</h2>
+                <ul class="clients-list">
+                    <li class="clients-logo">
+                        <a class="clients-logo-link" href="#">
+                            <svg class="clients-logo-icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="clients-logo clients__logo">
-                        <a class="clients-logo-link clients__link" href="#">
-                            <svg class="clients-logo-icon clients__icon" width="106" height="60">
+                    <li class="clients-logo">
+                        <a class="clients-logo-link" href="#">
+                            <svg class="clients-logo-icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="clients-logo clients__logo">
-                        <a class="clients-logo-link clients__link" href="#">
-                            <svg class="clients-logo-icon clients__icon" width="106" height="60">
+                    <li class="clients-logo">
+                        <a class="clients-logo-link" href="#">
+                            <svg class="clients-logo-icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="clients-logo clients__logo">
-                        <a class="clients-logo-link clients__link" href="#">
-                            <svg class="clients-logo-icon clients__icon" width="106" height="60">
+                    <li class="clients-logo">
+                        <a class="clients-logo-link" href="#">
+                            <svg class="clients-logo-icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="clients-logo clients__logo">
-                        <a class="clients-logo-link clients__link" href="#">
-                            <svg class="clients-logo-icon clients__icon" width="106" height="60">
+                    <li class="clients-logo">
+                        <a class="clients-logo-link" href="#">
+                            <svg class="clients-logo-icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo5"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="clients-logo clients__logo">
-                        <a class="clients-logo-link clients__link" href="#">
-                            <svg class="clients-logo-icon clients__icon" width="106" height="60">
+                    <li class="clients-logo">
+                        <a class="clients-logo-link" href="#">
+                            <svg class="clients-logo-icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo6"></use>
                             </svg>
                         </a>
@@ -368,7 +366,7 @@
     <footer class="footer" style="padding: 60px 0px;">
         <div class="container footer-container">
             <div class="adr">
-                <a href="./index.html" class="logo-footer">Web<span class="logo-footer-secondary">Studio</span></a>
+                <a href="./index.html" class="logo">Web<span class="logo-footer-secondary">Studio</span></a>
                 <address>
                     <ul class="address">
                         <li class="item">
